@@ -1,0 +1,21 @@
+{
+    "appName": "ampawesome",
+    "roleName": "pinpointLambdaRole7fe356ae",
+    "cloudformationPolicyName": "cloudformationPolicy7fe356ae",
+    "cloudWatchPolicyName": "cloudWatchPolicy7fe356ae",
+    "pinpointPolicyName": "pinpointPolicy7fe356ae",
+    "authPolicyName": "pinpoint_amplify_7fe356ae",
+    "unauthPolicyName": "pinpoint_amplify_7fe356ae",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
